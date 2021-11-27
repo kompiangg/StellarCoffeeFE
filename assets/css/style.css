@@ -920,7 +920,7 @@ section {
 }
 
 .menu .menu-img {
-  width: 70px;
+  width: 90px;
   border-radius: 50%;
   float: left;
   border: 5px solid rgba(255, 255, 255, 0.2);
@@ -936,8 +936,8 @@ section {
 
 .menu .menu-content::after {
   content: "......................................................................"
- "...................................................................."
- "....................................................................";
+  "...................................................................."
+  "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -947,18 +947,20 @@ section {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.menu .menu-content a {
+.menu .menu-item .name-ingredient {
+  margin-top: 7px;
+}
+
+.menu .menu-content p {
+  margin-bottom: 0;
+  margin-left: 14px;
   padding-right: 10px;
   background: #1a1814;
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: white;
-  transition: 0.3s;
-}
-
-.menu .menu-content a:hover {
   color: #cda45e;
+  transition: 0.3s;
 }
 
 .menu .menu-content span {
@@ -971,7 +973,8 @@ section {
 }
 
 .menu .menu-ingredients {
-  margin-left: 85px;
+  padding-right: 90px;
+  margin-left: 105px;
   font-style: italic;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
