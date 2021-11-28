@@ -9,6 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
+  scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
   background: #0c0b09;
   color: #fff;
@@ -1037,6 +1038,11 @@ section {
   margin-bottom: 0;
 }
 
+.col-lg-8.text-center.order-2.order-lg-1{
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 992px) {
   .specials .nav-link {
     border: 0;
@@ -1047,6 +1053,10 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
+/* .event-item img {
+  height: 620px;
+} */
+
 .events {
   background: url(../img/events-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -1090,17 +1100,6 @@ section {
   font-weight: 600;
   font-size: 26px;
   color: #cda45e;
-}
-
-.events .event-item .price {
-  font-size: 26px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.events .event-item .price span {
-  border-bottom: 2px solid #cda45e;
 }
 
 .events .event-item ul {
