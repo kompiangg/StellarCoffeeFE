@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  top: 0px;
 }
 
 #header.header-scrolled {
@@ -195,12 +195,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-weight: 300;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
 
 #header .logo a {
-  color: #fff;
+  color: #cda45e;
+  
 }
 
 #header .logo img {
@@ -883,6 +885,7 @@ section {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
@@ -1135,6 +1138,15 @@ section {
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #cda45e;
+}
+
+button {
+  background: #c5b254a6;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -1448,6 +1460,10 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
@@ -1728,4 +1744,51 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Discount and Copouns
+--------------------------------------------------------------*/
+.Discount .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #1a1814;
+}
+
+.Discount .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #cda45e;
+}
+
+.Discount .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Discount .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.Discount .box:hover {
+  background: #cda45e;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.Discount .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+  color: #fff;
+}
+
+.col-lg-6 {
+  flex: auto;
+  width: 100%;
 }
