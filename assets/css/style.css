@@ -1307,6 +1307,69 @@ button {
 }
 
 /*--------------------------------------------------------------
+# Leaderboard
+--------------------------------------------------------------*/
+.leaderboard{
+  position: relative;
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.leaderboard .table-item {
+  position: absolute;
+  max-width: 25rem;
+  border: 1px solid #26231d;
+  border-radius: 10px;
+  background-color:#26231d;
+  box-shadow: #aaaaaa;
+  box-shadow: 0 2px 10px rgba(62, 9, 11, .3);
+  position: relative;
+  box-align: center;
+}
+
+.table-item h3 {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  color: #cda45e;
+  margin: 20px;
+
+}
+
+thead {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10rem;
+}
+
+tbody {
+  position: relative;
+  left: 30px;
+  padding: 1rem;
+}
+
+table{
+  width: 100%;
+}
+
+tr {
+  font-size: 15px;
+  color: #aaaaaa;
+  position: relative;
+  z-index: 1;
+  counter-increment: leaderboard;
+  padding: 18px 10px 18px 50px;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1.0, 1.0);
+}
+
+td {
+  padding: 10px;
+}
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
