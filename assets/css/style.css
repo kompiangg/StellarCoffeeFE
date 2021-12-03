@@ -1807,3 +1807,57 @@ h5.content-collapse{
   font-size: 13px;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+################################################ Order Cart Page
+--------------------------------------------------------------*/
+
+.collapse-order {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.collapse-order:hover {
+  transition: 0.5s;
+  color: #cda45e;
+}
+
+.collapse-order.active-order {
+  color: #cda45e;
+}
+
+.btn-cart {
+  margin-top: 15px;
+  height: auto;
+  background-color: #ffc10700;
+}
+
+.btn-cart p {
+  display: inline;
+  padding-left: 12px;
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal !important;
+  color: white!important;
+}
+
+.btn-cart:hover {
+  background-color: #d69a33;
+  border-color: #cda45e;
+}
+
+/* .menu-cart {
+  padding-top: 1%;
+} */
+
+.menu-cart h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.menu-cart p {
+  font-style: italic;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
