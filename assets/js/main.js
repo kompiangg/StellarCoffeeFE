@@ -178,6 +178,7 @@
     let menuContainer = select('.menu-container');
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
+        filter: '.filter-coffee',
         itemSelector: '.menu-item',
         layoutMode: 'fitRows'
       });
