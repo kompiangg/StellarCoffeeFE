@@ -1861,3 +1861,7 @@ h5.content-collapse{
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
 }
+
+.cart-feature {
+  display: block;
+}

@@ -57,7 +57,7 @@
 		</header><!-- End Header -->
 
 		<main id="main">
-			<section class="inner-page" style="padding: 100px;">
+			<section id="menu" class="menu" style="padding: 100px; padding-bottom: 20px;">
 				<div class="container">
 					<button class="collapsible collapse-order">Coffee</button>
 					<div class="content">
@@ -67,7 +67,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Espresso</h5>
 									<p class="text-justify para mb-2 mt-2">Espresso beans</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="1">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp16.000</p>
 									</button>
@@ -78,7 +78,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Americano</h5>
 									<p class="text-justify para mb-2 mt-2">An espresso shot added by hot water</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="2">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp24.000</p>
 									</button>
@@ -89,7 +89,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Cappucino</h5>
 									<p class="text-justify para mb-2 mt-2">Double shot espresso, steamed milk, and steamed milk foam on top</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="3">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp25.000</p>
 									</button>
@@ -100,7 +100,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Vanilla Latte</h5>
 									<p class="text-justify para mb-2 mt-2">Rich, full-bodied espresso blended with creamy steamed milk and vanilla syrup</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="4">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp27.000</p>
 									</button>
@@ -111,7 +111,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Cafe Latte</h5>
 									<p class="text-justify para mb-2 mt-2">Espresso with milk</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="5">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp25.000</p>
 									</button>
@@ -128,7 +128,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Lemon Tea</h5>
 									<p class="text-justify para mb-2 mt-2">Lemon Tea is a tea where lemon juice is added in black tea</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="6">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp17.000</p>
 									</button>
@@ -139,7 +139,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Lychee Tea</h5>
 									<p class="text-justify para mb-2 mt-2">Black tea which has been scented with lychee peels</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="7">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp20.000</p>
 									</button>
@@ -150,7 +150,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Taro Latte</h5>
 									<p class="text-justify para mb-2 mt-2">Latte which made with taro</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="8">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp20.000</p>
 									</button>
@@ -161,7 +161,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Matcha Latte</h5>
 									<p class="text-justify para mb-2 mt-2">Tea-based beverage combining vivid green matcha tea powder and milk</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="9">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp25.000</p>
 									</button>
@@ -172,7 +172,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Chocolate Latte</h5>
 									<p class="text-justify para mb-2 mt-2">Espresso with milk</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="10">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp25.000</p>
 									</button>
@@ -189,7 +189,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">French Fries</h5>
 									<p class="text-justify para mb-2 mt-2">A thin strip of deep-fried potato</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="11">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp17.000</p>
 									</button>
@@ -200,7 +200,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Potato Wedges</h5>
 									<p class="text-justify para mb-2 mt-2">Irregular wedge-shaped slices of potato that are either baked</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="12">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp20.000</p>
 									</button>
@@ -211,7 +211,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Croissant</h5>
 									<p class="text-justify para mb-2 mt-2">Crescent shaped roll made with yeast-risen dough</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="13">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp25.000</p>
 									</button>
@@ -222,7 +222,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Cheese Burger</h5>
 									<p class="text-justify para mb-2 mt-2">Burger that contained cheese</p>
-									<button class="mt-2 btn btn-warning btn-cart" type="button">
+									<button class="mt-2 btn btn-warning btn-cart" type="button" data-menuid="14">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp45.000</p>
 									</button>
@@ -233,7 +233,7 @@
 								<div class="text-center menu-cart">
 									<h5 class="mt-2 mb-0">Deluxe Burger</h5>
 									<p class="text-justify para mb-2 mt-2">The burger is topped, right before serving with a raw onion slice, a slice of tomato, pickles and iceberg lettuce</p>
-									<button class="mt-2 btn btn-warning btn-cart mb-5" type="button">
+									<button class="mt-2 btn btn-warning btn-cart mb-5" type="button" data-menuid="15">
 										<i style="color: white;" class="fa fa-shopping-cart"></i>
 										<p>Rp50.000</p>
 									</button>
@@ -242,9 +242,25 @@
 						</div>
 					</div>
 				</div>
-				
 			</section>
 
+			<!-- <section id="cart-feature" class="cart-feature">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center cart-header">
+							<i style="color: white;" class="fa fa-shopping-cart"></i> <span style="padding-left: 10px;">Cart</span>
+						</h2>
+					</div>
+
+					<div class="col-md-12">
+						<h5>Quantity : <span></span> </h5>
+					</div>
+					<div class="col-md-12">
+						<h5>Grand Total : Rp<span></span> </h5>
+					</div>
+					</>
+				</div>
+			</section> -->
 		</main><!-- End #main -->
 
 		<div id="preloader"></div>
