@@ -42,12 +42,12 @@
 
 				<nav id="navbar" class="navbar order-last order-lg-0">
 					<ul>
-						<li><a class="nav-link scrollto" href="#hero">Home</a></li>
-						<li><a class="nav-link scrollto" href="#about">About</a></li>
-						<li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-						<li><a class="nav-link scrollto active" href="#specials">Specials</a></li>
-						<li><a class="nav-link scrollto" href="#events">Events</a></li>
-						<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+						<li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+						<li><a class="nav-link scrollto active" href="#menu">Menu</a></li>
+						<li><a class="nav-link scrollto" href="index.html#specials">Specials</a></li>
+						<li><a class="nav-link scrollto" href="index.html#events">Events</a></li>
+						<li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
 					</ul>
 					<i class="bi mobile-nav-toggle bi-list"></i>
 				</nav><!-- .navbar -->
@@ -246,18 +246,36 @@
 
 			<section id="cart-feature" class="cart-feature">
 				<div class="container">
-					<div class="row cart-header" style="margin-bottom: 30px;">
+					<div class="row cart-header" style="margin-bottom: 10px;">
 						<h2 class="text-center cart-header">
 							<i style="color: white;" class="fa fa-shopping-cart"></i> <span style="padding-left: 10px;">Cart</span>
 						</h2>
 					</div>
+					<div class="col-md-8 offset-md-2 horizontal-cart-starter" style="margin-top: 20px;margin-bottom: 30px;">
+						<hr>
+					</div>
 					<div class="row container-cart-item">	
-
-						<div class="col-md-8 offset-md-3 quantity-all-items">
-							<h5>Quantity : <span></span> </h5>
+						<div class="col-md-8 offset-md-2 horizontal-cart-divider"  style="margin-top: 0px;">
+							<hr>
 						</div>
-						<div class="col-md-8 offset-md-3">
-							<h5>Grand Total : Rp<span></span> </h5>
+						<div class="d-flex justify-content-between col-md-8 offset-md-2 quantity-all-items">
+							<h5>Quantity : </h5>
+							<p>0</p>
+						</div>
+						<div class="d-flex justify-content-between col-md-8 offset-md-2 grand-total">
+							<h5>Grand Total : </h5>
+							<p>Rp0</p>
+						</div>
+					</div>
+					<div class="col-md-8 offset-md-2 horizontal-cart-divider">
+						<hr>
+					</div>
+					<div class="row cart-btn">
+						<div class="col-md-3 offset-md-3">
+							<a class="d-flex align-content-center justify-content-center book-a-table-btn clear-cart-btn">Clear Cart</a>
+						</div>
+						<div class="col-md-3">
+							<a class="d-flex align-content-center justify-content-center book-a-table-btn checkout-btn">Checkout</a>
 						</div>
 					</div>
 				</div>

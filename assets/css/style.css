@@ -1864,4 +1864,24 @@ h5.content-collapse{
 
 .cart-feature {
   display: block;
+  padding-top: 20px;
+}
+
+.quantity-all-items {
+  padding-bottom: 15px;
+}
+
+.cart-btn a {
+  cursor: pointer;
+  border-width: 2.5px;
+  height: 43px;
+}
+
+.clear-cart-btn {
+  color: rgb(255, 117, 117);
+  border-color: rgb(128, 31, 31);
+}
+
+.clear-cart-btn:hover {
+  background-color: rgb(170, 31, 31);
 }
