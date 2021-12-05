@@ -1885,3 +1885,29 @@ h5.content-collapse{
 .clear-cart-btn:hover {
   background-color: rgb(170, 31, 31);
 }
+
+.page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #aaaaaa;
+}
+
+.page-title h2 {
+  font-size: 36px;
+  color: #cda45e;
+}
+
+.page-title h1::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 3px 10px;
+}
+
+.page-title {
+  padding-bottom: 30px;
+}
