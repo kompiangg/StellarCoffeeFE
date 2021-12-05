@@ -885,6 +885,124 @@ section {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Menu Collapse
+--------------------------------------------------------------*/
+.collapsible {
+  background-color: #1d1b16;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 0;
+}
+.collapsible:hover {
+  background-color: #555;
+}
+.content {
+  padding: 10px 5px;
+  display: none;
+  overflow: hidden;
+  background-color: #1d1b16;
+}
+.collapsible:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+/*--------------------------------------------------------------
+# content-collapse
+--------------------------------------------------------------*/
+.ratings i {
+  font-size: 16px;
+  color: red
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through
+}
+
+.product-image {
+  width: 100%
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px
+}
+
+h5.content-collapse{
+  font-weight: 400;
+  color: #0c0b09;
+}
+
+.para {
+  font-size: 16px
+}
+
+/*--------------------------------------------------------------
+# content-collapse
+--------------------------------------------------------------*/
+.ratings i {
+  font-size: 16px;
+  color: red
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through
+}
+
+.product-image {
+  width: 100%
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px
+}
+
+h5.content-collapse{
+  font-weight: 400;
+  color: #0c0b09;
+}
+
+.para {
+  font-size: 16px
+}
 
 /*--------------------------------------------------------------
 # Menu Section
