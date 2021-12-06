@@ -133,7 +133,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
             alert(`ERROR: Something went wrong (${response})`);
           }
         })
-        .catch(error => alert(`ERROR: Something went wrong (${error})`));
+        .catch(error => alert(`ERROR: ${error}`));
       
         deleteCartItems(allCartItems);
     }
