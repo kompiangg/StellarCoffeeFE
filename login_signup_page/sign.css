@@ -1,0 +1,76 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(D:/GullyBoy/throne.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.signbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.signbox {
+	width: 320px;
+	height: 650px;
+	background: #000;
+	color: #fff;
+	top: 8%;
+	left: 35%;
+	position: absolute;
+	transform: translate(-50, -50);
+	box-sizing: border-box;
+	padding: 65px 30px;
+}
+
+.signbox input[type="text"], input[type="email"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.signbox input[type="submit"], input[type="reset"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #45a29e;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.signbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey
+}
+
+.signbox a:hover
+{
+    color: #45a29e;
+}
