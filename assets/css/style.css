@@ -695,8 +695,8 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #1d1b16;
-  margin-top: 110px;
+  /* background: #1d1b16; */
+  margin-top: 90px;
 }
 
 @media (max-width: 992px) {
@@ -1884,6 +1884,10 @@ td {
   padding-bottom: 15px;
 }
 
+.cart-btn {
+  padding-top: 30px;
+}
+
 .cart-btn a {
   cursor: pointer;
   border-width: 2.5px;
@@ -1919,8 +1923,4 @@ td {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 3px 10px;
-}
-
-.page-title {
-  padding-bottom: 30px;
 }
