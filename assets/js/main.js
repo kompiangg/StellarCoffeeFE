@@ -293,4 +293,25 @@
     })
   });
 
-})()
+})();
+
+(async function (){
+  const URL_SERVER = 'http://127.0.0.1:5000';
+  const topFiveSortedUser = await fetch(URL_SERVER+'/api/user/leaderboard?count=5', {
+    headers:{'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa'}
+  }).then(response => response.json());
+
+  if(topFiveSortedUser.status === 'OK') {
+    let rankItem = '';
+    topFiveSortedUser.item.reduce((index, curr) => {
+      rankItem += ` <tr>
+                      <td class="Ranking">${index}</td>
+                      <td class="Name">${curr.username} </td>
+                      <td class="Poin">${curr.point}</td>
+                    </tr>`
+      return ++index;
+    }, 1)
+    const rankContainer = document.querySelector('.leaderboard-container');
+    rankContainer.innerHTML = rankItem
+  }
+})();
