@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #cda45e;
   color: #fff;
   border-radius: 50px;
-  padding: 8px 25px;
+  padding: 10px 25px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
@@ -228,6 +228,10 @@ h1, h2, h3, h4, h5, h6 {
 .book-a-table-btn:hover {
   background: #cda45e;
   color: #fff;
+}
+
+.book-a-table-btn.extend {
+  margin: 20px 0 0 15px;
 }
 
 @media (max-width: 992px) {
@@ -1328,8 +1332,6 @@ button {
 }
 
 .leaderboard .table-item {
-  position: absolute;
-  max-width: 25rem;
   border: 1px solid #26231d;
   border-radius: 10px;
   background-color:#26231d;
@@ -1348,6 +1350,10 @@ button {
 
 }
 
+.leaderboard table {
+  font-family: "Poppins", sans-serif;
+}
+
 thead {
   text-align: center;
   text-transform: uppercase;
@@ -1357,17 +1363,18 @@ thead {
 
 tbody {
   position: relative;
-  left: 30px;
+  text-align: center;
   padding: 1rem;
 }
 
 table{
   width: 100%;
+  margin-bottom: 20px;
 }
 
 tr {
   font-size: 15px;
-  color: #aaaaaa;
+  color: #ffffff;
   position: relative;
   z-index: 1;
   counter-increment: leaderboard;
@@ -1401,6 +1408,10 @@ td {
 /*--------------------------------------------------------------
 # teams
 --------------------------------------------------------------*/
+.teams {
+  background-color: #1a1814;
+}
+
 .teams .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1625,7 +1636,7 @@ td {
   background: #0c0b09;
   border-top: 1px solid #37332a;
   border-bottom: 1px solid #28251f;
-  padding: 60px 0 30px 0;
+  padding: 45px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1644,7 +1655,7 @@ td {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
@@ -1673,7 +1684,7 @@ td {
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   color: #fff;
   position: relative;
@@ -1923,4 +1934,52 @@ td {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 3px 10px;
+}
+
+/*--------------------------------------------------------------
+############################################### Leaderboard Page
+--------------------------------------------------------------*/
+
+section.leaderboard {
+  background: #0c0b09;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding-top: 40px;
+}
+
+.leaderboard .leaderboard-item {
+  border: 3px solid #cda45e;
+  border-radius: 40px;
+  padding: 20px 53px;
+  margin-bottom: 20px;
+}
+
+.leaderboard .leaderboard-item.top-3 {
+  background-color: #cda45e!important;
+  border: 3px solid #cda45e;
+  border-radius: 40px;
+  padding: 20px 53px;
+  margin-bottom: 20px;
+}
+
+.leaderboard .leaderboard-item p {
+  margin-bottom: 0px!important;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;;
+}
+
+.leaderboard .leaderboard-title {
+  text-align: center;
+  padding: 0px 30px 20px 30px;
+  margin-bottom: 2px;
+}
+
+.leaderboard .leaderboard-title p{
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #cda45e;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
