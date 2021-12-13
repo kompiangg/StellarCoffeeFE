@@ -1732,3 +1732,97 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/* 
+Login Page & Signup Page
+ */
+main.login section.background {
+  background: url(/assets/img/login.jpg) center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
+section.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+}
+
+section.center .nested-center, .nested-center.sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 550px;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+.nested-center.sign-up {
+  height: 700px!important;
+}
+
+.login-section form {
+  width: 400px;
+}
+
+.login-section input[type=text], .login-section input[type=password] {
+  width: 100%;
+  padding: 9px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: #cda45e;
+  border-style: solid!important;
+}
+
+.login-section input::placeholder{
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login-section .input-item {
+  margin-bottom: 10px;
+}
+
+.login-section .input-item label {
+  margin-left: 10px;
+}
+
+.container-input a.login {
+  display: flex;
+  margin-top: 35px !important;
+  /* margin-left: 0px; */
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: #cda45e;
+}
+
+.container-input a.login:hover {
+  background-color: #947744;
+  border-color: #947744;
+}
+
+.login-section h1 {
+  font-weight: 700;
+  color: #cda45e;
+  margin-bottom: 40px;
+}
