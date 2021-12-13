@@ -1,1151 +1,825 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Restaurantly</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Stellar Coffee</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/logo/logo.png" rel="icon">
+    <link href="assets/img/logo/logo.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+  <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
 
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top topbar-scrolled">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente header-scrolled">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>+62 888 8888 888</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
-      </div>
+        <a href="index.html">
+          <img src="/assets/img/logo/logo-wide-transparent.png" alt="logo-stellar-coffee" style="width: 180px;">
+          <!-- <h1 class="logo me-auto me-lg-0">Stellar Coffee</h1> -->
+        </a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>En</li>
-          <li><a href="#">De</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-cente header-scrolled">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto active" href="#specials">Specials</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi mobile-nav-toggle bi-list"></i>
-      </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Welcome to <span>Restaurantly</span></h1>
-          <h2>Delivering great food for more than 18 years!</h2>
-
-          <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
-          </div>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+            <li><a class="nav-link scrollto" href="#events">Events</a></li>
+          </ul>
+          <i class="bi mobile-nav-toggle bi-list"></i>
+        </nav><!-- .navbar -->
+        <div class="button d-flex">
+            <a href="login.html" class="book-a-table-btn scrollto d-none d-lg-flex login-button">Login</a>
+          <a href="sign-up.html" class="book-a-table-btn scrollto d-none d-lg-flex sign-up-button"> Sign-Up</strong> </a>
         </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn"></a>
-        </div>
-
       </div>
-    </div>
-  </section><!-- End Hero -->
+    </header><!-- End Header -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container position-relative text-center text-lg-start aos-init " data-aos="zoom-in" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="assets/img/about.jpg" alt="">
+          <div class="col-lg-8">
+            <h1>Welcome to <span>Stellar Coffee</span></h1>
+            <h2>Great food waiting for you!</h2>
+
+            <div class="btns">
+              <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+              <a href="order-cart.html" class="btn-book animated fadeInUp scrollto">Order Now</a>
             </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
 
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Hero -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
+    <main id="main">
 
-        <div class="section-title">
-          <h2>Why Us</h2>
-          <p>Why Choose Our Restaurant</p>
-        </div>
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container aos-init " data-aos="fade-up">
 
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>Who are we?</p>
           </div>
 
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu section-bg">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Menu</h2>
-          <p>Check Our Tasty Menu</p>
-        </div>
-
-        <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row menu-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 600px;">
-
-          <div class="col-lg-6 menu-item filter-starters" style="position: absolute; left: 0px; top: 0px;">
-            <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 660px; top: 0px;">
-            <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Bread Barrel</a><span>$6.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters" style="position: absolute; left: 0px; top: 120px;">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads" style="position: absolute; left: 660px; top: 120px;">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 0px; top: 240px;">
-            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters" style="position: absolute; left: 660px; top: 240px;">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads" style="position: absolute; left: 0px; top: 360px;">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads" style="position: absolute; left: 660px; top: 360px;">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty" style="position: absolute; left: 0px; top: 480px;">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->
-
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title text-center">
-          <h2></h2>
-          <p>Check Our Specials</p>
-        </div>
-
-        <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link show" data-bs-toggle="tab" href="#tab-1">Deluxe Burger</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Espresso</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#tab-3">Croissant</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 text-center order-2 order-lg-1">
-                    
-                    <p class="col-lg-9 text-center order-1 order-lg-2">
-    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
-</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 text-center order-2 order-lg-1">
-                    
-                    <p class="col-lg-9 text-center order-1 order-lg-2">
-    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
-</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="tab-pane active" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 text-center order-2 order-lg-1">
-                    
-                    <p class="col-lg-9 text-center order-1 order-lg-2">
-    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
-</p>
-                    
-                  </div>
-                  
-                </div>
-              </div>
-              
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Specials Section -->
-
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Events</h2>
-          <p>Organize Your Events in our Restaurant</p>
-        </div>
-
-        <div class="events-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper" id="swiper-wrapper-d25a5410987ed10675" aria-live="off" style="transform: translate3d(-6480px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="4 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="5 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="6 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="7 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="8 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="9 / 9">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div></div>
-          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-      </div>
-    </section><!-- End Events Section -->
-
-    <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Reservation</h2>
-          <p>Book a Table</p>
-        </div>
-
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Book a Table</button></div>
-        </form>
-
-      </div>
-    </section><!-- End Book A Table Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>What they're saying about us</p>
-        </div>
-
-        <div class="testimonials-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper" id="swiper-wrapper-f353c66db04d1a104" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-3509.33px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="6 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="7 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="3">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" role="group" aria-label="8 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="4">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+              <h1>Need to fill</h1>
             </div>
 
-            <div class="swiper-slide swiper-slide-duplicate-active" role="group" aria-label="4 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="0">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-duplicate-next" role="group" aria-label="5 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="1">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide" role="group" aria-label="6 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide" role="group" aria-label="7 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="3">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="8 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="4">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" role="group" aria-label="4 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="0">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next" role="group" aria-label="5 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="1">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><div class="swiper-slide swiper-slide-duplicate" role="group" aria-label="6 / 11" style="width: 418.667px; margin-right: 20px;" data-swiper-slide-index="2">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div></div>
-          <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span></div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-
-      <div class="container aos-init aos-animate" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Some photos from Our Restaurant</p>
-        </div>
-      </div>
-
-      <div class="container-fluid aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
-      <div class="container aos-init" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Chefs</h2>
-          <p>Our Proffesional Chefs</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member aos-init" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Master Chef</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member aos-init" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member aos-init" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+            <div class="col-lg-6 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+              <div class="about-img">
+                <img src="assets/img/about.jpg" alt="">
               </div>
             </div>
           </div>
 
         </div>
+      </section><!-- End About Section -->
 
-      </div>
-    </section><!-- End Chefs Section -->
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container aos-init" data-aos="fade-up">
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container aos-init" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Why Us</h2>
+            <p>Why Choose Our Coffee Shop</p>
+          </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <div class="row">
+
+            <div class="col-lg-4">
+              <div class="box aos-init" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>We Have Coffee</h4>
+                <p>What did you find on coffee shop?</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box aos-init" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h4>We Have Coffee</h4>
+                <p>Of course the coffee</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box aos-init" data-aos="zoom-in" data-aos-delay="300">
+                <span>03</span>
+                <h4>We Have Coffee</h4>
+                <p>So we provide coffeee for you</p>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-      </div>
+      </section><!-- End Why Us Section -->
 
-      <div data-aos="fade-up" class="aos-init">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
-      </div>
+      <!-- ======= Menu Section ======= -->
+      <section id="menu" class="menu section-bg">
+        <div class="container aos-init " data-aos="fade-up">
 
-      <div class="container aos-init" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Menu</h2>
+            <p>Check Our Tasty Menu</p>
+          </div>
 
-        <div class="row mt-5">
+          <div class="row aos-init " data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="menu-flters">
+                <li data-filter=".filter-coffee" class="filter-active">Coffee</li>
+                <li data-filter=".filter-noncoffee">Non-Coffee</li>
+                <li data-filter=".filter-food">Food</li>
+              </ul>
+            </div>
+          </div>
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Jl.Tukad Pakerisan No 144 Denpasar Bali</p>
+          <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+            
+            <!-- Start Coffee Category -->
+
+            <div class="col-lg-6 menu-item filter-coffee">
+              <img src="assets/img/menu/espresso.jpg" class="menu-img" alt="espresso image">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Espresso</p><span>Rp16.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Espresso beans
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-coffee">
+              <img src="assets/img/menu/americano.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Americano</p><span>Rp24.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  An espresso shot added by hot water
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-coffee">
+              <img src="assets/img/menu/cappucino.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Cappucino</p><span>Rp25.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Double shot espresso, steamed milk, and steamed milk foam on top
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-coffee">
+              <img src="assets/img/menu/vanilla-latte.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Vanilla Latte</p><span>Rp27.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Rich, full-bodied espresso blended with creamy steamed milk and vanilla syrup
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-coffee">
+              <img src="assets/img/menu/cafe-latte.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Cafe Latte</p><span>Rp25.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Espresso with milk
+                </div>
+              </div>
+            </div>
+
+            <!-- End Coffee Category -->
+
+            <!-- Start Non-Coffee Category -->
+
+            <div class="col-lg-6 menu-item filter-noncoffee">
+              <img src="assets/img/menu/lemon-tea.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Lemon Tea</p><span>Rp17.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Lemon Tea is a tea where lemon juice is added in black tea
+                </div>  
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-noncoffee">
+              <img src="assets/img/menu/lychee-tea.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Lychee Tea</p><span>Rp20.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Black tea which has been scented with lychee peels
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-noncoffee">
+              <img src="assets/img/menu/taro-latte.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Taro Latte</p><span>Rp20.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Latte which made with taro
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-noncoffee">
+              <img src="assets/img/menu/matcha-latte.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Matcha Latte</p><span>Rp25.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Tea-based beverage combining vivid green matcha tea powder and milk
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-noncoffee">
+              <img src="assets/img/menu/chocolate-latte.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Chocolate Latte</p><span>Rp25.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Cafe latte with chocolate
+                </div>
+              </div>
+            </div>
+
+            <!-- End Non-Coffee Category -->
+
+            <!-- Start Food Category -->
+
+            <div class="col-lg-6 menu-item filter-food">
+              <img src="assets/img/menu/french-fries.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>French Fries</p><span>Rp17.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  A thin strip of deep-fried potato.
+                </div>
+              </div>
               </div>
 
-              <div class="open-hours">
-                <i class="bi bi-clock"></i>
-                <h4>Open Hours:</h4>
+            <div class="col-lg-6 menu-item filter-food">
+              <img src="assets/img/menu/potato-wedges.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Potato Wedges</p><span>Rp20.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Irregular wedge-shaped slices of potato that are either baked
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-food">
+              <img src="assets/img/menu/croissant.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Croissant</p><span>Rp25.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Crescent shaped roll made with yeast-risen dough
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-food">
+              <img src="assets/img/menu/cheese-burger.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Cheese Burger</p><span>Rp45.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  Burger that contained cheese
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-food">
+              <img src="assets/img/menu/deluxe-burger.jpg" class="menu-img" alt="">
+              <div class="name-ingredient">
+                <div class="menu-content">
+                  <p>Deluxe Burger</p><span>Rp50.000</span>
+                </div>
+                <div class="menu-ingredients">
+                  The burger is topped, right before serving with a raw onion slice, a slice of tomato, pickles and iceberg lettuce
+                </div>
+                
+              </div>
+            </div>
+
+            <!-- End Food Category -->
+          </div>
+          
+          <div class="d-flex justify-content-center" style="padding-top: 20px;">
+            <a href="order-cart.html" class="text-center book-a-table-btn scrollto">Order Now</a>
+          </div>
+        </div>
+      </section><!-- End Menu Section -->
+
+      <!-- ======= Specials Section ======= -->
+      <section id="specials" class="specials">
+        <div class="container aos-init " data-aos="fade-up">
+          <div class="section-title">
+            <h2>Special Menu Today</h2>
+            <p>Check Our Specials Today</p>
+          </div>
+          <div class="row aos-init " data-aos="fade-up" data-aos-delay="100">  
+            <!-- <div class="col-lg-3 list-navigation">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link show" data-bs-toggle="tab" href="#tab-1">Deluxe Burger</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#tab-2">Espresso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Croissant</a>
+                </li>
+              </ul>
+            </div> -->
+            <div class="col-lg-9 mt-4 mt-lg-0">
+              <!-- <div class="tab-content">
+                <div class="tab-pane show" id="tab-1">
+                  <div class="row">
+                    <div class="col-lg-8 text-center order-2 order-lg-1">
+                      <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+                        <div class="about-img">
+                          <img src="assets/img/menu/deluxe-burger.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane active" id="tab-2">
+                  <div class="row">
+                    <div class="col-lg-8 text-center order-2 order-lg-1">                                    
+                      <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+                        <div class="about-img">
+                          <img src="assets/img/menu/espresso.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row">
+                    <div class="col-lg-8 text-center order-2 order-lg-1">
+                      <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+                        <div class="about-img">
+                          <img src="assets/img/menu/croissant.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center" style="padding-top: 20px;">
+            <a href="order-cart.html" class="text-center book-a-table-btn scrollto">Order Now</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Specials Section -->
+
+      <!-- ======= Events Section ======= -->
+      <section id="events" class="events">
+        <div class="container aos-init" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Events of Stellar Coffe</h2>
+            <p>Special Price For You in Our Coffe!</p>
+          </div>
+
+          <div class="events-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events aos-init " data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper" id="swiper-wrapper-d25a5410987ed10675" aria-live="off" style="transform: translate3d(-6480px, 0px, 0px); transition-duration: 0ms;">
+              <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="2 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="3 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" role="group" aria-label="4 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" role="group" aria-label="5 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" role="group" aria-label="6 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="7 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center ">
+                    <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" role="group" aria-label="8 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" role="group" aria-label="9 / 9">
+                <div class="row event-item">
+                  <div class="col-lg-12 d-flex justify-content-center">
+                    <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+              <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+              <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <a href="event-page.html" class="text-center book-a-table-btn extend">See Our Special Offer</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Events Section -->
+
+      
+
+      <!--Leaderboard-->
+      <section id="leaderboard" class="leaderboard">
+        <div class="container aos-init" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Leaderboard</h2>
+            <p>Make your name appear here</p>
+          </div>
+
+          <div class="row">
+            <div class="table-item col-6 offset-3">
+                <table>
+                    <thead>
+                        <h3>High Point Customer</h3>
+                        <tr>
+                            <th class="rank">Rank</th>
+                            <th class="name">Username</th>
+                            <th class="poin">Poin</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody class="leaderboard-container">
+                      
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="leaderboard.html" class="text-center book-a-table-btn extend">Check Our Leaderboard</a>
+        </div>
+      </section>
+      <!--End of Leaderboard-->
+
+      <!-- ======= Gallery Section ======= -->
+      <!-- <section id="gallery" class="gallery">
+
+        <div class="container aos-init " data-aos="fade-up">
+          <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Some photos from Our Restaurant</p>
+          </div>
+        </div>
+
+        <div class="container-fluid aos-init " data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row g-0">
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                  <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+      <!-- End Gallery Section -->
+
+      <!-- ======= teams Section ======= -->
+      <section id="teams" class="teams">
+        <div class="container aos-init" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Our Greatest Team</p>
+          </div>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/img/teams/ivan.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Albertus Ivan Suryawan</h4>
+                    <h4>Project Lead | Back-End | DBA</h4>
+                    <span>2008561093</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/img/teams/pang.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Kompiang Gede Sukadharma</h4>
+                    <h4>Full-Stack | DevOps</h4>
+                    <span>2008561083</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/teams/ngakan.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Ngakan Putu Widyasprana</h4>
+                    <h4>Full-Stack</h4>
+                    <span>2008561033</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/teams/james.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Yauw James Fang Dwiputra Harta</h4>
+                    <h4>Front-End</h4>
+                    <span>2008561078</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/teams/diah.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Kadek Diah Pramesti</h4>
+                    <h4>Front-End</h4>
+                    <span>2008561068</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="member aos-init" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/teams/audy.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Putu Audy Cipta Pratiwi</h4>
+                    <h4>Front-End</h4>
+                    <span>2008561013</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End Chefs Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="footer-info">
+                <h4>Stellar Coffee</h4>
                 <p>
-                  Monday-Saturday:<br>
-                  11:00 AM - 2300 PM
+                  <strong>Address:</strong> Hutan IF UNUD <br>
+                  <strong>Phone:</strong> +62 888 8888 888<br>
+                  <strong>Email:</strong> meowmeow@stellarcoffee.com<br>
                 </p>
               </div>
+            </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+62 888 8888 888 </p>
-              </div>
-
+            <div class="col-md-4 d-flex align-content-center justify-content-center">
+              <a href="#">
+                <img src="/assets/img/logo/logo-transparent.png" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 footer-links">
+              <h4>Featured Menu</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Our Delicious Menu</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Specials Menu Today</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Events</a></li>
+              </ul>
             </div>
 
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Restaurantly</h3>
-              <p>
-                Jl. Tukad Pakerisan <br>
-                No 144 Denpasar Bali<br><br>
-                <strong>Phone:</strong> +62 888 8888 888<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
         </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="copyright">
-        © Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by Ai Team
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <!-- <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Ai Team
+        </div>
+      </div> -->
+    </footer>
+    <!-- End Footer -->
 
-  
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
+    
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/landing_page.js"></script>
+  </body>
 
 </html>
+
+<!-- Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/s/photos/coffee-art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@beccatapert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Becca Tapert</a> on <a href="https://unsplash.com/s/photos/vanilla-latte?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@kcatimmer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kenny Timmer</a> on <a href="https://unsplash.com/s/photos/latte?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/s/photos/lemon-tea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@motomotosc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">moto moto sc</a> on <a href="https://unsplash.com/s/photos/lychee-tea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/s/photos/matcha-latte?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@visionary_imaging?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">matthew reyes</a> on <a href="https://unsplash.com/s/photos/french-fries?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">engin akyurt</a> on <a href="https://unsplash.com/s/photos/potato-wedges?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@kobbyfotos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kobby Mendez</a> on <a href="https://unsplash.com/s/photos/croissants?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@amir_v_ali?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">amirali mirhashemian</a> on <a href="https://unsplash.com/s/photos/cheese-burger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<!-- Photo by <a href="https://unsplash.com/@pablomerchanm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pablo Merchán Montes</a> on <a href="https://unsplash.com/s/photos/deluxe-burger?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
