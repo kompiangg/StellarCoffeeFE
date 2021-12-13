@@ -1,6 +1,16 @@
 /**
 * Created by : Kompiang
 */
+(function () {
+  const orderNowButton = document.querySelectorAll('.order-now');
+  orderNowButton.forEach(element => {
+    element.style.cursor = "pointer";
+    element.addEventListener('click', () => {
+      localStorage.getItem('username') ? window.location.replace('order-cart.html') : alert("Login dulu, sob");
+    })
+  })
+})();
+
 (async function (){
   const URL_SERVER = 'http://127.0.0.1:5000';
   const topFiveSortedUser = await fetch(URL_SERVER+'/api/user/leaderboard?count=5', {
@@ -67,4 +77,18 @@
   } else {
     console.log("Cannot load today special menu");
   }
+})();
+
+(function() {
+  let navbarButton = '';
+  const header = document.querySelector('#navbar-button');
+  const username = localStorage.getItem('username');
+  if(username) {
+    navbarButton = `<a href="personal-page.html" class="book-a-table-btn scrollto d-none d-lg-flex login-button"> <i class="bi bi-person-fill" style="padding-right:10px;padding-left:0px" ></i> ${username}</a>`;
+  } else {
+    navbarButton = `
+                    <a href="login.html" class="book-a-table-btn scrollto d-none d-lg-flex login-button">Login</a>
+                    <a href="sign-up.html" class="book-a-table-btn scrollto d-none d-lg-flex sign-up-button"> Sign-Up</strong> </a>`;
+  }
+  header.innerHTML = navbarButton;
 })();
