@@ -1,6 +1,6 @@
 const URL_SERVER = 'http://127.0.0.1:5000';
 const LANDING_PAGE = 'http://127.0.0.1:5501';
-(function () {
+(async function () {
   const loginButton = document.querySelector("#login-button");
 
   loginButton.addEventListener('click', async () => {
@@ -8,7 +8,7 @@ const LANDING_PAGE = 'http://127.0.0.1:5501';
     const password = document.querySelector("#password");
     const reqPacket = {"username": username.value, "password": password.value};
 
-    fetch(URL_SERVER+'/api/auth/login', {
+    const loginFetch = await fetch(URL_SERVER+'/api/auth/login', {
       method: 'POST',
       mode: 'cors',
       headers:{
@@ -18,29 +18,35 @@ const LANDING_PAGE = 'http://127.0.0.1:5501';
       body: JSON.stringify(reqPacket),
     })
     .then(response => response.json())
-    .then(response => {
-      if (response.status === 'OK') {
-        localStorage.setItem('username', username.value);
-        
-        fetch(URL_SERVER+'/api/user/'+username.value, {
-          headers: {
-            'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa',
-          },
-        })
-        .then(response => response.json())
-        .then(response => {
-          if (response.status === 'OK') {
-            localStorage.setItem('uid', response.item[0].uid);
-            window.location.replace(LANDING_PAGE);
-          } else {
-            alert(`ERROR1: hello 1${response.error_msg}`);
-          }
-        })
-        .catch(error => alert(`ERROR0: hello ${error.error_msg}`))
-      } else {
-        alert(`ERROR2: hello 2 ${response.error_msg}`);
-      }
+    .catch(error => {
+      console.log(`ERROR: ${error.error_msg}`);
+      alert('ERROR: Something when wrong while sending request to server');
     })
-    .catch(error => alert(`ERROR3: ${error.error_msg}`))
+
+    if (loginFetch.status === 'OK') {
+      localStorage.setItem('username', username.value);
+      
+      const uidUserFetch = await fetch(URL_SERVER+ '/api/user/' + username.value, {
+        headers: {
+          'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa',
+        },
+      })
+      .then(response => response.json())
+      .catch(error => {
+        console.log(`ERROR: ${error.error_msg}`);
+        alert('ERROR: Something when wrong while sending request to server');
+      })
+
+      if (uidUserFetch.status === 'OK') {
+        localStorage.setItem('uid', uidUserFetch.item[0].uid);
+        window.location.replace(LANDING_PAGE);
+      } else {
+        console.log(`ERROR: ${uidUserFetch.error_msg}`);
+        alert('ERROR: Something when wrong while sending request to server');
+      }
+    } else {
+      console.log(loginFetch.error_msg);
+      alert('Maaf, username atau password tidak diketahui');
+    }
   })
 })();
