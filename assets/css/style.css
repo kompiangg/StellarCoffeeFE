@@ -1862,12 +1862,20 @@ section.center .nested-center, .nested-center.sign-up{
   font-weight: 700;
 }
 
-.login-button, .sign-up-button {
+.login-button, .sign-up-button, .logout-button {
   font-weight: 700;
 }
 
+.logout-button {
+  border-color: rgb(165, 2, 2);
+}
+
+.logout-button:hover {
+  background-color: rgb(165, 2, 2);
+}
+
 .sign-up-button {
-  background-color: #cda45e
+  background-color: #cda45e;
 }
 
 .sign-up-button:hover {
