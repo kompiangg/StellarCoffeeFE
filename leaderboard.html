@@ -36,24 +36,28 @@
 		<header id="header" class="fixed-top d-flex align-items-cente header-scrolled">
 			<div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-				<h1 class="logo me-auto me-lg-0"><a href="index.html">Stellar Coffe</a></h1>
+				<a href="index.html">
+					<img src="/assets/img/logo/logo-wide-transparent.png" alt="logo-stellar-coffee" style="width: 180px;">
+					<!-- <h1 class="logo me-auto me-lg-0">Stellar Coffee</h1> -->
+				</a>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
 				<nav id="navbar" class="navbar order-last order-lg-0">
 					<ul>
-						<li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+						<li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
 						<li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-						<li><a class="nav-link scrollto active" href="#menu">Menu</a></li>
+						<li><a class="nav-link scrollto" href="index.html#menu">Menu</a></li>
 						<li><a class="nav-link scrollto" href="index.html#specials">Specials</a></li>
 						<li><a class="nav-link scrollto" href="index.html#events">Events</a></li>
-						<li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
 					</ul>
 					<i class="bi mobile-nav-toggle bi-list"></i>
-				</nav>
-				<a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Profile Coming Soon</a>
-
+				</nav><!-- .navbar -->
+				<div class="button d-flex" id='navbar-button'>
+					
+				</div>
 			</div>
-		</header>
-		<!-- End Header -->
+		</header><!-- End Header -->
 
 		<main id="main">
 			<section class="breadcrumbs">
@@ -88,6 +92,46 @@
 		</main>
 		<!-- End #main -->
 
+		<!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="footer-info">
+                <h4>Stellar Coffee</h4>
+                <p>
+                  <strong>Address:</strong> Hutan IF UNUD <br>
+                  <strong>Phone:</strong> +62 888 8888 888<br>
+                  <strong>Email:</strong> meowmeow@stellarcoffee.com<br>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 d-flex align-content-center justify-content-center">
+              <a href="#">
+                <img src="/assets/img/logo/logo-transparent.png" alt="">
+              </a>
+            </div>
+            
+            <div class="col-md-4 footer-links">
+              <h4>Featured Menu</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#menu">Our Delicious Menu</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#special">Specials Menu Today</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html#events">Events</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
 		<div id="preloader"></div>
 		<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -102,6 +146,7 @@
 		<!-- Template Main JS File -->
 		<script src="assets/js/leaderboard.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/navbar.js"></script>
 
 	</body>
 

@@ -1,6 +1,7 @@
 /**
 * Created by : Kompiang
 */
+
 (async function (){
   const URL_SERVER = 'http://127.0.0.1:5000';
   const topFiveSortedUser = await fetch(URL_SERVER+'/api/user/leaderboard?count=5', {
@@ -67,4 +68,14 @@
   } else {
     console.log("Cannot load today special menu");
   }
+})();
+
+(function () {
+  const orderNowButton = document.querySelectorAll('.order-now');
+  orderNowButton.forEach(element => {
+    element.style.cursor = "pointer";
+    element.addEventListener('click', () => {
+      localStorage.getItem('username') ? window.location.replace('order-cart.html') : alert("Login dulu, sob");
+    })
+  })
 })();

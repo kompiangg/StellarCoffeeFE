@@ -116,7 +116,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
       willPOST.idUser = "Coming Soon";
       willPOST.created = Date.now();
 
-      fetch(URL_SERVER+"/api/order/checkout", {
+      fetch(URL_SERVER+`/api/order/${localStorage.getItem('uid')}/checkout`, {
         method: 'POST',
         mode: 'cors',
         headers: {
