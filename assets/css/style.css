@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #cda45e;
   color: #fff;
   border-radius: 50px;
-  padding: 8px 25px;
+  padding: 10px 25px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
@@ -228,6 +228,10 @@ h1, h2, h3, h4, h5, h6 {
 .book-a-table-btn:hover {
   background: #cda45e;
   color: #fff;
+}
+
+.book-a-table-btn.extend {
+  margin: 20px 0 0 15px;
 }
 
 @media (max-width: 992px) {
@@ -695,8 +699,8 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #1d1b16;
-  margin-top: 110px;
+  /* background: #1d1b16; */
+  margin-top: 90px;
 }
 
 @media (max-width: 992px) {
@@ -887,6 +891,125 @@ section {
 
 
 /*--------------------------------------------------------------
+# Menu Collapse
+--------------------------------------------------------------*/
+.collapsible {
+  background-color: #1d1b16;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 0;
+}
+.collapsible:hover {
+  background-color: #555;
+}
+.content {
+  padding: 10px 5px;
+  display: none;
+  overflow: hidden;
+  background-color: #1d1b16;
+}
+.collapsible:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+
+/*--------------------------------------------------------------
+# content-collapse
+--------------------------------------------------------------*/
+.ratings i {
+  font-size: 16px;
+  color: red
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through
+}
+
+.product-image {
+  width: 100%
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px
+}
+
+h5.content-collapse{
+  font-weight: 400;
+  color: #0c0b09;
+}
+
+.para {
+  font-size: 16px
+}
+
+/*--------------------------------------------------------------
+# content-collapse
+--------------------------------------------------------------*/
+.ratings i {
+  font-size: 16px;
+  color: red
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through
+}
+
+.product-image {
+  width: 100%
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px
+}
+
+h5.content-collapse{
+  font-weight: 400;
+  color: #0c0b09;
+}
+
+.para {
+  font-size: 16px
+}
+
+/*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
 .menu #menu-flters {
@@ -1041,6 +1164,57 @@ section {
   margin-bottom: 0;
 }
 
+.specials .about-img {
+  position: relative;
+  transition: .5s;
+}
+
+.specials .about-img img {
+  max-width: 100%;
+  border: 4px solid rgb(0 0 0 / 20%);
+  position: relative;
+}
+
+.specials .about-img::before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  content: '';
+  border-left: 5px solid #cda45e;
+  border-top: 5px solid #cda45e;
+  transition: .5s;
+}
+
+.specials .about-img::after {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  content: '';
+  border-right: 5px solid #cda45e;
+  border-bottom: 5px solid #cda45e;
+  transition: .5s;
+}
+
+.specials .about-img:hover {
+  transform: scale(1.2);
+}
+
+.specials .about-img:hover::before {
+  left: 10px;
+  top: 10px;
+}
+
+.specials .about-img:hover::after {
+  right: 10px;
+  bottom: 10px;
+}
+
 .col-lg-8.text-center.order-2.order-lg-1{
   display: flex;
   justify-content: center;
@@ -1150,190 +1324,75 @@ button {
 }
 
 /*--------------------------------------------------------------
-# Book A Table
+# Leaderboard
 --------------------------------------------------------------*/
-.book-a-table .php-email-form {
+.leaderboard{
+  position: relative;
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.leaderboard .table-item {
+  border: 1px solid #26231d;
+  border-radius: 10px;
+  background-color:#26231d;
+  box-shadow: #aaaaaa;
+  box-shadow: 0 2px 10px rgba(62, 9, 11, .3);
+  position: relative;
+  box-align: center;
+}
+
+.table-item h3 {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  color: #cda45e;
+  margin: 20px;
+
+}
+
+.leaderboard table {
+  font-family: "Poppins", sans-serif;
+}
+
+thead {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10rem;
+}
+
+tbody {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+table{
   width: 100%;
+  margin-bottom: 20px;
 }
 
-.book-a-table .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.book-a-table .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.book-a-table .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.book-a-table .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.book-a-table .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.book-a-table .php-email-form .loading {
-  display: none;
-  text-align: center;
-  padding: 15px;
-}
-
-.book-a-table .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
-  border-top-color: #1a1814;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.book-a-table .php-email-form input, .book-a-table .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: #0c0b09;
-  border-color: #625b4b;
-  color: white;
-}
-
-.book-a-table .php-email-form input::-webkit-input-placeholder, .book-a-table .php-email-form textarea::-webkit-input-placeholder {
-  color: #a49b89;
-}
-
-.book-a-table .php-email-form input::-moz-placeholder, .book-a-table .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
-}
-
-.book-a-table .php-email-form input::placeholder, .book-a-table .php-email-form textarea::placeholder {
-  color: #a49b89;
-}
-
-.book-a-table .php-email-form input:focus, .book-a-table .php-email-form textarea:focus {
-  border-color: #cda45e;
-}
-
-.book-a-table .php-email-form input {
-  height: 44px;
-}
-
-.book-a-table .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.book-a-table .php-email-form button[type="submit"] {
-  background: #cda45e;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.book-a-table .php-email-form button[type="submit"]:hover {
-  background: #d3af71;
-}
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.2);
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: white;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
-  margin: 0 0 0 45px;
-}
-
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #d3af71;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #26231d;
-  position: relative;
-  border-radius: 6px;
+tr {
+  font-size: 15px;
+  color: #ffffff;
   position: relative;
   z-index: 1;
+  counter-increment: leaderboard;
+  padding: 18px 10px 18px 50px;
+  cursor: pointer;
+  backface-visibility: hidden;
+  transform: translateZ(0) scale(1.0, 1.0);
 }
 
-.testimonials .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #cda45e;
+td {
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
-.gallery .gallery-item {
+/* .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #454035;
   border-bottom: 3px solid #454035;
@@ -1345,12 +1404,16 @@ button {
 
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
-}
+} */
 
 /*--------------------------------------------------------------
-# Chefs
+# teams
 --------------------------------------------------------------*/
-.chefs .member {
+.teams {
+  background-color: #1a1814;
+}
+
+.teams .member {
   text-align: center;
   margin-bottom: 20px;
   background: #343a40;
@@ -1358,7 +1421,7 @@ button {
   overflow: hidden;
 }
 
-.chefs .member .member-info {
+.teams .member .member-info {
   opacity: 0;
   position: absolute;
   bottom: 0;
@@ -1368,70 +1431,38 @@ button {
   transition: 0.2s;
 }
 
-.chefs .member .member-info-content {
+.teams .member .member-info-content {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 0;
   transition: bottom 0.4s;
 }
 
-.chefs .member .member-info-content h4 {
+.teams .member .member-info-content h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
 
-.chefs .member .member-info-content span {
+.teams .member .member-info-content span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
 }
 
-.chefs .member .social {
-  position: absolute;
-  left: 0;
-  bottom: -38px;
-  right: 0;
-  height: 48px;
-  transition: bottom ease-in-out 0.4s;
-  text-align: center;
-}
-
-.chefs .member .social a {
-  transition: color 0.3s;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.chefs .member .social a:hover {
-  color: #cda45e;
-}
-
-.chefs .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.chefs .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+.teams .member .member-info {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 80%);
   opacity: 1;
   transition: 0.4s;
 }
 
-.chefs .member:hover .member-info-content {
-  bottom: 60px;
+.teams .member .member-info-content {
+  bottom: 20px;
   transition: bottom 0.4s;
 }
-
-.chefs .member:hover .social {
-  bottom: 0;
-  transition: bottom ease-in-out 0.4s;
-}
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1597,7 +1628,7 @@ button {
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  padding: 0 0 30px 0;
+  padding: 0 0 0 0;
   color: #fff;
   font-size: 14px;
 }
@@ -1606,10 +1637,11 @@ button {
   background: #0c0b09;
   border-top: 1px solid #37332a;
   border-bottom: 1px solid #28251f;
-  padding: 60px 0 30px 0;
+  padding: 45px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
+  text-align: right;
   margin-bottom: 30px;
 }
 
@@ -1624,7 +1656,7 @@ button {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 17px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Playfair Display", serif;
@@ -1653,7 +1685,7 @@ button {
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   color: #fff;
   position: relative;
@@ -1746,14 +1778,130 @@ button {
   color: #fff;
 }
 
+/* 
+Login Page & Signup Page
+ */
+main.login section.background {
+  background: url(/assets/img/login.jpg) center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
+section.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+}
+
+section.center .nested-center, .nested-center.sign-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 550px;
+  backdrop-filter: blur(35px);
+  -webkit-backdrop-filter: blur(35px);
+}
+
+.nested-center.sign-up {
+  height: 700px!important;
+}
+
+.login-section form {
+  width: 400px;
+}
+
+.login-section input, .login-section input {
+  width: 100%;
+  padding: 9px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: #cda45e;
+  border-style: solid!important;
+  color: white;
+}
+
+.login-section input::placeholder{
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login-section .input-item {
+  margin-bottom: 10px;
+}
+
+.login-section .input-item label {
+  margin-left: 10px;
+}
+
+.container-input a.login {
+  display: flex;
+  margin-top: 35px !important;
+  /* margin-left: 0px; */
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: #cda45e;
+  font-weight: 700;
+}
+
+.login-button, .sign-up-button, .logout-button {
+  font-weight: 700;
+}
+
+.logout-button {
+  border-color: rgb(165, 2, 2);
+}
+
+.logout-button:hover {
+  background-color: rgb(165, 2, 2);
+}
+
+.sign-up-button {
+  background-color: #cda45e;
+}
+
+.sign-up-button:hover {
+  background-color: #947744;
+  border-color: #947744;
+}
+
+.container-input a.login:hover {
+  background-color: #947744;
+  border-color: #947744;
+}
+
+.login-section h1 {
+  font-weight: 700;
+  color: #cda45e;
+  margin-bottom: 40px;
+}
 /*--------------------------------------------------------------
 # Discount and Copouns
 --------------------------------------------------------------*/
 .Discount .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
-  background: #1a1814;
+  transition: all ease-out 0.3s;
+  background: #cda45e78;
 }
 
 .Discount .box span {
@@ -1779,7 +1927,7 @@ button {
 }
 
 .Discount .box:hover {
-  background: #cda45e;
+  background: #ede0b63d;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -1788,7 +1936,218 @@ button {
   color: #fff;
 }
 
-.col-lg-6 {
-  flex: auto;
-  width: 100%;
+#main .discount ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+#main .discount ol a {
+  color: #cda45e;
+}
+
+/*--------------------------------------------------------------
+################################################ Order Cart Page
+--------------------------------------------------------------*/
+
+.collapse-order {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.collapse-order:hover {
+  transition: 0.5s;
+  color: #cda45e;
+}
+
+.collapse-order.active-order {
+  color: #cda45e;
+}
+
+.btn-cart {
+  margin-top: 15px;
+  height: auto;
+  background-color: #ffc10700;
+}
+
+.btn-cart p {
+  display: inline;
+  padding-left: 12px;
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal !important;
+  color: white!important;
+}
+
+.btn-cart:hover {
+  background-color: #d69a33;
+  border-color: #cda45e;
+}
+
+/* .menu-cart {
+  padding-top: 1%;
+} */
+
+.menu-cart h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.menu-cart p {
+  font-style: italic;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cart-feature {
+  display: block;
+  padding-top: 20px;
+}
+
+.quantity-all-items {
+  padding-bottom: 15px;
+}
+
+.cart-btn {
+  padding-top: 30px;
+}
+
+.cart-btn a {
+  cursor: pointer;
+  border-width: 2.5px;
+  height: 43px;
+}
+
+.clear-cart-btn {
+  color: rgb(255, 117, 117);
+  border-color: rgb(128, 31, 31);
+}
+
+.clear-cart-btn:hover {
+  background-color: rgb(170, 31, 31);
+}
+
+.page-title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  color: #aaaaaa;
+}
+
+.page-title h2 {
+  font-size: 36px;
+  color: #cda45e;
+}
+
+.page-title h1::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 3px 10px;
+}
+
+/*--------------------------------------------------------------
+############################################### Leaderboard Page
+--------------------------------------------------------------*/
+
+section.leaderboard {
+  background: #0c0b09;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  padding-top: 40px;
+}
+
+.leaderboard .leaderboard-item {
+  border: 3px solid #cda45e;
+  border-radius: 40px;
+  padding: 20px 53px;
+  margin-bottom: 20px;
+}
+
+.leaderboard .leaderboard-item.top-3 {
+  background-color: #cda45e!important;
+  border: 3px solid #cda45e;
+  border-radius: 40px;
+  padding: 20px 53px;
+  margin-bottom: 20px;
+}
+
+.leaderboard .leaderboard-item p {
+  margin-bottom: 0px!important;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;;
+}
+
+.leaderboard .leaderboard-title {
+  text-align: center;
+  padding: 0px 30px 20px 30px;
+  margin-bottom: 2px;
+}
+
+.leaderboard .leaderboard-title p{
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #cda45e;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+/* -------------------------------------------
+    User Profile Section
+  -------------------------------------------
+*/
+.personal-page {
+  background-color: #1a1814;
+}
+
+.personal-page .container {
+  padding: 20px 0px 0px 0px;
+}
+
+.personal-page .profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.personal-page .profile-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.personal-page .profile-container h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.personal-page .unique-customer-profile .col-2 {
+  padding: 0px;
+}
+
+.history-item {
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.history-item h5 {
+  margin-bottom: 20px;
+}
+
+.history-item p {
+  margin-top: 0px;
+}
+
+.history-item span {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
