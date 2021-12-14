@@ -2099,4 +2099,54 @@ section.leaderboard {
   font-weight: 700;
   margin-bottom: 0px;
 }
-/* test */
+
+/* -------------------------------------------
+    User Profile Section
+  -------------------------------------------
+*/
+.personal-page {
+  background-color: #1a1814;
+}
+
+.personal-page .container {
+  padding: 20px 0px 0px 0px;
+}
+
+.personal-page .profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.personal-page .profile-img img {
+  width: 200px;
+  height: 200px;
+}
+
+.personal-page .profile-container h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.personal-page .unique-customer-profile .col-2 {
+  padding: 0px;
+}
+
+.history-item {
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.history-item h5 {
+  margin-bottom: 20px;
+}
+
+.history-item p {
+  margin-top: 0px;
+}
+
+.history-item span {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
