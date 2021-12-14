@@ -1,7 +1,3 @@
-/**
-* Created by : Kompiang
-*/
-
 (async function (){
   const URL_SERVER = 'http://127.0.0.1:5000';
   const topFiveSortedUser = await fetch(URL_SERVER+'/api/user/leaderboard?count=5', {
