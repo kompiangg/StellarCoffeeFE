@@ -2100,3 +2100,19 @@ section.leaderboard {
   margin-bottom: 0px;
 }
 /* test */
+
+/* -------------------------------------------
+    User Profile Section
+  -------------------------------------------
+*/
+
+.profile.mr-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.media-body.mb-5.text-white {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
