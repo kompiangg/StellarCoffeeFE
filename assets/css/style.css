@@ -1874,12 +1874,12 @@ section.center .nested-center, .nested-center.sign-up{
   background-color: rgb(165, 2, 2);
 }
 
-.sign-up-button, .apply-btn {
+.sign-up-button, .apply-btn, .apply-btn-after {
   background-color: #cda45e;
   cursor: pointer;
 }
 
-.sign-up-button:hover, .apply-btn:hover {
+.sign-up-button:hover, .apply-btn:hover{
   background-color: #947744;
   border-color: #947744;
 }

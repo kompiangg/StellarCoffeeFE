@@ -18,13 +18,15 @@ const URL_SERVER = 'http://127.0.0.1:5000';
   const grandTotal = document.querySelector('.grand-total');
   const checkoutButton = document.querySelector('.checkout-btn');
   const clearBtn = document.querySelector('.clear-cart-btn');
-  const couponApplyButton = document.querySelector('.apply-btn');
+  let couponApplyButton = document.querySelector('.apply-btn');
+  const discount = document.querySelector('.discount-invoice');
 
   btnCart.forEach(element => {
     element.addEventListener('click', function() {
       const menuId = parseInt(this.dataset.menuid);
       let currentTotalQuantity = parseInt(quantityAllItems.children[1].innerHTML);
-      let currentGrandTotal = parseInt(grandTotal.children[1].innerHTML.slice(2))
+      let currentGrandTotal = parseInt(grandTotal.children[1].innerHTML.slice(2));
+      let semiTotalValue = parseInt(semiTotal.children[1].innerHTML.slice(2)) 
       
       if (selectedItems[menuId]) {
         const cartContainer = document.querySelector('.container-cart-item');
@@ -98,7 +100,8 @@ const URL_SERVER = 'http://127.0.0.1:5000';
       }
       quantityAllItems.children[1].innerHTML = ++currentTotalQuantity;
       currentGrandTotal += selectedItems[menuId].hargaMenu;
-      semiTotal.children[1].innerHTML = `Rp${currentGrandTotal}`;
+      semiTotalValue += selectedItems[menuId].hargaMenu;
+      semiTotal.children[1].innerHTML = `Rp${semiTotalValue}`;
       grandTotal.children[1].innerHTML = `Rp${currentGrandTotal}`;
     });
   });
@@ -106,9 +109,10 @@ const URL_SERVER = 'http://127.0.0.1:5000';
   
   // TODO: Create apply feature
   
+  const couponInputText = document.querySelector('#coupon');
+  let event_id = 0
   couponApplyButton.addEventListener('click', async () => {
     if (Object.keys(selectedItems) != 0) {
-      const couponInputText = document.querySelector('#coupon');
       
       const validTodayEvent = await fetch(URL_SERVER + '/api/order/todayEvents', {
         headers: {'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa'}
@@ -123,7 +127,18 @@ const URL_SERVER = 'http://127.0.0.1:5000';
         const duplicationOfItem = validTodayEvent.item.slice(0);
         duplicationOfItem.reduce((index, element) => {
           if (element.coupon_code === couponInputText.value) {
+            event_id = index;
             const discountCoupon = parseInt(element.disc_amount.slice(4));
+            discount.children[1].innerHTML = `-Rp${discountCoupon}`;
+            
+            let currentGrandTotalAfterDiscount = parseInt(grandTotal.children[1].innerHTML.slice(2));
+            currentGrandTotalAfterDiscount -= discountCoupon;
+            grandTotal.children[1].innerHTML = `Rp${currentGrandTotalAfterDiscount}`;
+            couponApplyButton.remove();
+            document.querySelector('.container-apply-button').innerHTML = `<div class="d-flex justify-content-center align-content-center">
+                                                                              <a class="book-a-table-btn apply-btn-after" style="margin: 10px 0;">Apply</a>
+                                                                            </div>`
+            couponInputText.readOnly = true;
             duplicationOfItem.splice(1);
           } else  if (element.coupon_code !== couponInputText.value && index == validTodayEvent.count) {
             alert('Kupon tidak valid');
@@ -149,9 +164,10 @@ const URL_SERVER = 'http://127.0.0.1:5000';
       willPOST.quantity = parseInt(quantityAllItems.children[1].innerHTML);
       willPOST.grandTotal = parseInt(grandTotal.children[1].innerHTML.slice(2));
       willPOST.done = false;
-      willPOST.idUser = "Coming Soon";
+      willPOST.event_id = event_id;
+      willPOST.idUser = localStorage.getItem('uid');
       willPOST.created = Date.now();
-
+      console.log(willPOST);
       fetch(URL_SERVER+`/api/order/${localStorage.getItem('uid')}/checkout`, {
         method: 'POST',
         mode: 'cors',
@@ -165,13 +181,13 @@ const URL_SERVER = 'http://127.0.0.1:5000';
         .then(response => {
           if (response.status == "OK") {
             alert("Terima kasih terlah berbelanja, silahkan tunggu pesanan anda");
+            deleteCartItems(allCartItems);
           } else {
             alert(`ERROR: Something went wrong (${response})`);
           }
         })
         .catch(error => alert(`ERROR: ${error}`));
       
-        deleteCartItems(allCartItems);
     }
   });
 
@@ -180,10 +196,8 @@ const URL_SERVER = 'http://127.0.0.1:5000';
     deleteCartItems(allCartItems);
   });
   
-  function deleteCartItems(allCartItems) {
-    allCartItems.forEach(element => {element.remove()} );
-    quantityAllItems.children[1].innerHTML = 0;
-    grandTotal.children[1].innerHTML = 'Rp0';
+  function deleteCartItems() {
+    window.location.reload();
     Object.keys(selectedItems).forEach(e => {
       delete selectedItems[`${e}`];
     });
