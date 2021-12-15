@@ -14,6 +14,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
   const selectedItems = {};
   const btnCart = document.querySelectorAll('.btn-cart');
   const quantityAllItems = document.querySelector('.quantity-all-items');
+  const semiTotal = document.querySelector('.semi-total');
   const grandTotal = document.querySelector('.grand-total');
   const checkoutButton = document.querySelector('.checkout-btn');
   const clearBtn = document.querySelector('.clear-cart-btn');
@@ -96,6 +97,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
       }
       quantityAllItems.children[1].innerHTML = ++currentTotalQuantity;
       currentGrandTotal += selectedItems[menuId].hargaMenu;
+      semiTotal.children[1].innerHTML = `Rp${currentGrandTotal}`;
       grandTotal.children[1].innerHTML = `Rp${currentGrandTotal}`;
     });
   });
