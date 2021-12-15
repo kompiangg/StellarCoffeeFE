@@ -1821,7 +1821,7 @@ section.center .nested-center, .nested-center.sign-up{
   width: 400px;
 }
 
-.login-section input, .login-section input {
+.login-section input, .cart-feature input {
   width: 100%;
   padding: 9px 20px;
   margin: 10px 0;
@@ -1874,11 +1874,12 @@ section.center .nested-center, .nested-center.sign-up{
   background-color: rgb(165, 2, 2);
 }
 
-.sign-up-button {
+.sign-up-button, .apply-btn, .apply-btn-after {
   background-color: #cda45e;
+  cursor: pointer;
 }
 
-.sign-up-button:hover {
+.sign-up-button:hover, .apply-btn:hover{
   background-color: #947744;
   border-color: #947744;
 }
@@ -2005,10 +2006,6 @@ section.center .nested-center, .nested-center.sign-up{
 .cart-feature {
   display: block;
   padding-top: 20px;
-}
-
-.quantity-all-items {
-  padding-bottom: 15px;
 }
 
 .cart-btn {

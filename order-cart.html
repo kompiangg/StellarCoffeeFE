@@ -45,7 +45,7 @@
 
 				<nav id="navbar" class="navbar order-last order-lg-0">
 					<ul>
-						<li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+						<li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
 						<li><a class="nav-link scrollto" href="index.html#about">About</a></li>
 						<li><a class="nav-link scrollto" href="index.html#menu">Menu</a></li>
 						<li><a class="nav-link scrollto" href="index.html#specials">Specials</a></li>
@@ -282,14 +282,38 @@
 							<h5>Quantity : </h5>
 							<p>0</p>
 						</div>
+						<div class="d-flex justify-content-between col-md-8 offset-md-2 semi-total">
+							<h5>Total : </h5>
+							<p>Rp0</p>
+						</div>
+						<div class="d-flex justify-content-between col-md-8 offset-md-2 discount-invoice">
+							<h5>Discount : </h5>
+							<p>-Rp0</p>
+						</div>
+						<div class="col-md-8 offset-md-2 horizontal-cart-divider">
+							<hr>
+						</div>
 						<div class="d-flex justify-content-between col-md-8 offset-md-2 grand-total">
 							<h5>Grand Total : </h5>
 							<p>Rp0</p>
 						</div>
 					</div>
+					
 					<div class="col-md-8 offset-md-2 horizontal-cart-divider">
 						<hr>
 					</div>
+					
+					<div class="row input-coupon">
+						<div class="col-md-5 offset-3">
+							<input type="text" name="coupon" id="coupon" placeholder="Enter Coupon">
+						</div>
+						<div class="col-md-1 container-apply-button">
+							<div class="d-flex justify-content-center align-content-center">
+								<a class="book-a-table-btn apply-btn" style="margin: 10px 0;">Apply</a>
+							</div>
+						</div>
+					</div>
+
 					<div class="row cart-btn">
 						<div class="col-md-3 offset-md-3">
 							<a class="d-flex align-content-center justify-content-center book-a-table-btn clear-cart-btn">Clear Cart</a>
