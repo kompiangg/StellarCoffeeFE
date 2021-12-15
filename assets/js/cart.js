@@ -18,6 +18,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
   const grandTotal = document.querySelector('.grand-total');
   const checkoutButton = document.querySelector('.checkout-btn');
   const clearBtn = document.querySelector('.clear-cart-btn');
+  const couponApplyButton = document.querySelector('.apply-btn');
 
   btnCart.forEach(element => {
     element.addEventListener('click', function() {
@@ -102,6 +103,39 @@ const URL_SERVER = 'http://127.0.0.1:5000';
     });
   });
 
+  
+  // TODO: Create apply feature
+  
+  couponApplyButton.addEventListener('click', async () => {
+    if (Object.keys(selectedItems) != 0) {
+      const couponInputText = document.querySelector('#coupon');
+      
+      const validTodayEvent = await fetch(URL_SERVER + '/api/order/todayEvents', {
+        headers: {'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa'}
+      })
+      .then(response => response.json())
+      .catch(error => {
+        console.log(`ERROR: ${error.error_msg}`);
+        alert('ERROR: Something when wrong while sending request to server');
+      })
+  
+      if (validTodayEvent.status === 'OK') {
+        const duplicationOfItem = validTodayEvent.item.slice(0);
+        duplicationOfItem.reduce((index, element) => {
+          if (element.coupon_code === couponInputText.value) {
+            const discountCoupon = parseInt(element.disc_amount.slice(4));
+            duplicationOfItem.splice(1);
+          } else  if (element.coupon_code !== couponInputText.value && index == validTodayEvent.count) {
+            alert('Kupon tidak valid');
+          }
+          return ++index
+        }, 1);
+      }
+    } else {
+      alert('Silakan memilih menu terlebih dahulu');
+    }
+  });
+
   checkoutButton.addEventListener('click', function() {
     const allCartItems = document.querySelectorAll('.item-cart');
     console.log(selectedItems);
@@ -154,4 +188,8 @@ const URL_SERVER = 'http://127.0.0.1:5000';
       delete selectedItems[`${e}`];
     });
   }
+})();
+
+(function () {
+
 })();
