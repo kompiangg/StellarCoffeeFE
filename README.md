@@ -14,7 +14,7 @@ The Front End of our webapp for Data Structure Practicum's Coursework
 This is a digital object called "Za Programs" which tries to mimic a Cafe
 
 # Wait again? Why Though
-The last time was an [CLI Program](https://github.com/nmluci/KisatenSim), while this one is a proper Human-friendly program in a form of something called "Website"
+The last time was an [CLI Program](https://github.com/nmluci/StellarCoffee/blob/main/docs/StellarCoffee.png), while this one is a proper Human-friendly program in a form of something called "Website"
 
 # What This Program Actually DO?
 ## Simping a coffee. (again)
