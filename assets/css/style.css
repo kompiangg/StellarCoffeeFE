@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .book-a-table-btn.extend {
-  margin: 20px 0 0 15px;
+  margin: 40px 0 0 15px;
 }
 
 @media (max-width: 992px) {
