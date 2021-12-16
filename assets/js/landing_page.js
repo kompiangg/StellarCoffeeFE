@@ -23,48 +23,77 @@ const URL_SERVER = 'http://127.0.0.1:5000';
 })();
 
 (async function (){
-  const todaySpecials = await fetch(URL_SERVER+'/api/order/todaySpecials', {
-    headers:{'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa'}
-  })
-  .then(response => response.json())
-  .catch(error => console.log(error))
+  const day = new Date().getDay();
+  const listSpecialMenu = document.querySelector('.list-special-menu');
+  const pictSpecialMenu = document.querySelector('.pict-special-menu');
 
-  if (todaySpecials.status === "OK") {
-    let todaySpecialsViewList = '';
-    let todaySpecialsViewPict = '';
-
-    todaySpecials.item.reduce((index, curr) => {
-      todaySpecialsViewList += `
-                                <li class="nav-item">
-                                  <a class="nav-link show" data-bs-toggle="tab" href="#tab-${index}">${curr.name}</a>
-                                </li>`;
-      todaySpecialsViewPict += `
-                                <div class="tab-pane show" id="tab-${index}">
-                                  <div class="row">
-                                    <div class="col-lg-8 text-center order-2 order-lg-1">
-                                      <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
-                                        <div class="about-img">
-                                          <img src="${curr.path}" alt="${curr.name}">
+  if (day != 0) {
+    const todaySpecials = await fetch(URL_SERVER+'/api/order/todaySpecials', {
+      headers:{'SC-API-TOKEN': 'KyaanDameNakaWaZettaiDameeDaaa'}
+    })
+    .then(response => response.json())
+    .catch(error => console.log(error))
+    
+    if (todaySpecials.status === "OK") {
+      let todaySpecialsViewList = '';
+      let todaySpecialsViewPict = '';
+      todaySpecials.item[0][day].reduce((index, currElement) => {
+        console.log(currElement);
+        if (index == 0) {
+          todaySpecialsViewList += `
+                                    <li class="nav-item">
+                                      <a class="nav-link show active" data-bs-toggle="tab" href="#tab-${index + 1}">${currElement.name}</a>
+                                    </li>`;
+          todaySpecialsViewPict += `
+                                    <div class="tab-pane show active" id="tab-${index + 1}">
+                                      <div class="row">
+                                        <div class="col-lg-8 text-center order-2 order-lg-1">
+                                          <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+                                            <div class="about-img">
+                                              <img src="${currElement.path}" alt="${currElement.name}">
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                </div>`;
-      return ++index;
-    }, 1);
-
-    let ulElementSpecial = document.createElement('ul');
-    ulElementSpecial.classList.add('nav', 'nav-tabs', 'flex-column');
-    ulElementSpecial.innerHTML = todaySpecialsViewList;
-
-    const listNavigation = document.querySelector('.list-navigation');
-    listNavigation.innerHTML=ulElementSpecial;
-
-    const pictElement = document.querySelector('.tab-content');
-    pictElement.innerHTML - todaySpecialsViewPict
-    
-  } else {
-    console.log("Cannot load today special menu");
+                                    </div>`;
+        } else {
+          todaySpecialsViewList += `
+                                    <li class="nav-item">
+                                      <a class="nav-link show" data-bs-toggle="tab" href="#tab-${index + 1}">${currElement.name}</a>
+                                    </li>`;
+          todaySpecialsViewPict += `
+                                    <div class="tab-pane show" id="tab-${index + 1}">
+                                      <div class="row">
+                                        <div class="col-lg-8 text-center order-2 order-lg-1">
+                                          <div class="col-lg-7 order-1 order-lg-2 aos-init " data-aos="zoom-in" data-aos-delay="100">
+                                            <div class="about-img">
+                                              <img src="${currElement.path}" alt="${currElement.name}">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>`;
+        }
+        
+        return ++index;
+      }, 0);
+  
+      // let ulElementSpecial = document.createElement('ul');
+      // ulElementSpecial.classList.add('nav', 'nav-tabs', 'flex-column');
+      let ulElementSpecial = document.querySelector('.list-navigation');
+      ulElementSpecial.innerHTML = todaySpecialsViewList;
+  
+      // const listNavigation = document.querySelector('.list-navigation');
+      // listNavigation.innerHTML = ulElementSpecial;
+  
+      const pictElement = document.querySelector('.tab-content');
+      pictElement.innerHTML = todaySpecialsViewPict
+      
+      // listSpecialMenu.innerHTML = ulElementSpecial;
+      // pictSpecialMenu.innerHTML = pictElement;
+    } else {
+      console.log("Cannot load today special menu");
+    }
   }
 })();
 
