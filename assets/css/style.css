@@ -749,22 +749,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
-  background: url("../img/about-bg.jpg") center center;
-  background-size: cover;
-  position: relative;
-  padding: 80px 0;
-}
 
-.about:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 .about .about-img {
   position: relative;
@@ -1113,8 +1098,20 @@ h5.content-collapse{
 --------------------------------------------------------------*/
 .specials {
   overflow: hidden;
+  background: url(../img/events-bg.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
-
+.specials::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .specials .nav-tabs {
   border: 0;
 }
@@ -1235,19 +1232,7 @@ h5.content-collapse{
 } */
 
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.events::before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  background-color: #1a1814;
 }
 
 .events .section-title h2 {
@@ -1270,6 +1255,7 @@ h5.content-collapse{
 }
 
 .events .event-item {
+  border: #cda45e solid 2px;
   color: #fff;
 }
 
@@ -1410,10 +1396,26 @@ td {
 # teams
 --------------------------------------------------------------*/
 .teams {
-  background-color: #1a1814;
+  background: url("../img/teams-bg.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 80px 0;
+}
+
+.teams:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.548);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .teams .member {
+  /* width: 320px; */
   text-align: center;
   margin-bottom: 20px;
   background: #343a40;

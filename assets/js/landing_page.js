@@ -78,19 +78,12 @@ const URL_SERVER = 'http://127.0.0.1:5000';
         return ++index;
       }, 0);
   
-      // let ulElementSpecial = document.createElement('ul');
-      // ulElementSpecial.classList.add('nav', 'nav-tabs', 'flex-column');
       let ulElementSpecial = document.querySelector('.list-navigation');
       ulElementSpecial.innerHTML = todaySpecialsViewList;
-  
-      // const listNavigation = document.querySelector('.list-navigation');
-      // listNavigation.innerHTML = ulElementSpecial;
   
       const pictElement = document.querySelector('.tab-content');
       pictElement.innerHTML = todaySpecialsViewPict
       
-      // listSpecialMenu.innerHTML = ulElementSpecial;
-      // pictSpecialMenu.innerHTML = pictElement;
     } else {
       console.log("Cannot load today special menu");
     }
@@ -112,7 +105,7 @@ const URL_SERVER = 'http://127.0.0.1:5000';
     validCouponEventsFetch.item.forEach(element => {
       validCouponEvents += `
                             <div class="col-lg-4">
-                              <div class="box aos-init" data-aos="zoom-in" data-aos-delay="100">
+                              <div class="box aos-init event-item" data-aos="zoom-in" data-aos-delay="100">
                                 <span>${element.coupon_code}</span>
                                 <h4>${element.title}</h4>
                                 <p>Get Rp${element.disc_amount.slice(4)} Discount</p>
